@@ -1,0 +1,34 @@
+1️ Identify Actors (WHO interacts with the system)
+
+Actors are users or external systems that interact with the Blog Website.
+
+👥 Actors
+
+Visitor
+
+An unregistered user
+
+Can only read and search blog posts
+
+Registered User (Blogger)
+
+A logged-in user
+
+Can create and manage blog posts
+
+Can interact with content
+
+Admin
+
+Has full control over the system
+
+Manages users and content
+
+External Authentication Provider (Optional)
+
+Google / GitHub login service
+
+Notification Service (Optional)
+
+Email or in-app notification system
+ For UML diagrams, you may include only the main three actors if your instructor prefers simplicity.
