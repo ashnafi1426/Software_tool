@@ -1,6 +1,6 @@
 BLOG WEBSITE – ACTORS AND USE CASE OVERVIEW
 
-1️⃣ Identify Actors (WHO interacts with the system)
+ Identify Actors (WHO interacts with the system)
 
 Actors are users or external systems that interact with the Blog Website.
 
@@ -38,12 +38,12 @@ Actors are users or external systems that interact with the Blog Website.
 - Sends email or in-app notifications
 - Notifies users about comments, likes, or system updates
 
-📌 Note:
+ Note:
 For UML diagrams, only the primary actors (Visitor, Registered User, Admin) may be included if simplicity is required.
 
 ---
 
-2️⃣ Identify Use Cases (WHAT the actors can do)
+ Identify Use Cases (WHAT the actors can do)
 
 Visitor Use Cases:
 - View blog posts
