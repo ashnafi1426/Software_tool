@@ -1,35 +1,117 @@
-1️⃣ Identify Actors (WHO interacts with the system)
+2️⃣ Functional Requirements
 
-Actors are users or external systems that interact with the Blog Website.
+(WHAT the system must do)
 
-👥 Actors
+Below are clear functional requirements, grouped by feature.
+You can copy this directly into docs/requirements.md.
 
-Visitor
+🔹 2.1 User Management
+User Registration & Login
 
-An unregistered user
+The system shall allow users to register using email and password.
 
-Can only read and search blog posts
+The system shall allow users to log in and log out securely.
 
-Registered User (Blogger)
+The system may support social login (Google, GitHub).
 
-A logged-in user
+The system shall authenticate users using session or JWT authentication.
 
-Can create and manage blog posts
+Profile Management
 
-Can interact with content
+The system shall allow users to view their profile.
 
-Admin
+The system shall allow users to update their name, bio, and profile picture.
 
-Has full control over the system
+The system shall provide password reset functionality.
 
-Manages users and content
+🔹 2.2 Blog Post Management
+Create Blog Posts
 
-External Authentication Provider (Optional)
+The system shall allow registered users to create blog posts.
 
-Google / GitHub login service
+The system shall provide a rich text editor with formatting options.
 
-Notification Service (Optional)
+The system shall allow users to upload images in blog posts.
 
-Email or in-app notification system
+The system shall allow users to save posts as drafts.
 
-📌 For UML diagrams, you may include only the main three actors if your instructor prefers simplicity.
+Edit / Delete Blog Posts
+
+The system shall allow users to edit their own posts.
+
+The system shall allow users to delete their own posts.
+
+The system may support soft delete or permanent deletion.
+
+Post Metadata
+
+Each blog post shall have a title, author, content, publish date, tags, and category.
+
+The system shall generate SEO-friendly URL slugs for posts.
+
+🔹 2.3 Content Discovery
+Home Page / Feed
+
+The system shall display a list of published blog posts.
+
+The system shall show a preview (title, snippet, author, date).
+
+The system shall support pagination or infinite scrolling.
+
+Search
+
+The system shall allow users to search posts by title or content.
+
+Categories & Tags
+
+The system shall allow filtering posts by category or tag.
+
+The system may highlight featured or popular posts.
+
+🔹 2.4 Interaction & Engagement
+Comments
+
+The system shall allow users to comment on blog posts.
+
+The system shall allow users to edit or delete their own comments.
+
+The admin shall be able to moderate comments.
+
+Likes / Reactions
+
+The system shall allow users to like blog posts.
+
+Sharing
+
+The system shall allow users to share blog post links.
+
+🔹 2.5 Admin Functionality
+Admin Dashboard
+
+The system shall allow admin to view all users.
+
+The system shall allow admin to ban or promote users.
+
+The system shall allow admin to approve or remove blog posts.
+
+The system shall allow admin to manage categories.
+
+The system shall display basic site statistics.
+
+🔹 2.6 Notifications
+
+The system shall notify users when their post receives a comment or like.
+
+The system may send email or in-app notifications.
+
+The system may support newsletter subscriptions.
+
+🔹 2.7 Security & Performance
+
+The system shall enforce role-based access control.
+
+The system shall validate and sanitize all user inputs.
+
+The system shall protect against XSS, SQL injection, and CSRF.
+
+The system shall optimize page loading using caching.
