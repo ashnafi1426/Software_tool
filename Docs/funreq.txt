@@ -15,7 +15,6 @@ The system shall allow users to log in and log out securely.
 The system may support social login (Google, GitHub).
 
 The system shall authenticate users using session or JWT authentication.
-
 Profile Management
 
 The system shall allow users to view their profile.
