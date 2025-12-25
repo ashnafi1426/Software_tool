@@ -1,0 +1,75 @@
+BLOG WEBSITE – ACTORS AND USE CASE OVERVIEW
+
+ Identify Actors (WHO interacts with the system)
+
+Actors are users or external systems that interact with the Blog Website.
+
+👥 Actors
+
+1. Visitor
+- An unregistered user
+- Can read blog posts
+- Can search for blog posts
+
+2. Registered User (Blogger)
+- A logged-in user
+- Can create, edit, and delete their own blog posts
+- Can interact with content:
+  - Like posts
+  - Comment on posts
+  - Share posts
+
+3. Moderator
+- Responsible for maintaining content quality
+- Can review, edit, or remove inappropriate comments or posts
+- Can report or suspend users (limited privileges)
+
+4. Admin
+- Has full control over the system
+- Manages users, moderators, and content
+- Can configure system settings
+- Can remove any post or user
+
+5. External Authentication Provider (Optional)
+- Third-party login services (e.g., Google, GitHub)
+- Handles user authentication
+
+6. Notification Service (Optional)
+- Sends email or in-app notifications
+- Notifies users about comments, likes, or system updates
+
+ Note:
+For UML diagrams, only the primary actors (Visitor, Registered User, Admin) may be included if simplicity is required.
+
+---
+
+ Identify Use Cases (WHAT the actors can do)
+
+Visitor Use Cases:
+- View blog posts
+- Search blog posts
+
+Registered User (Blogger) Use Cases:
+- Register an account
+- Log in / Log out
+- Create a blog post
+- Edit own blog post
+- Delete own blog post
+- Like a post
+- Comment on a post
+- Share a post
+
+Moderator Use Cases:
+- Review reported posts or comments
+- Edit or remove inappropriate content
+- Manage user reports
+
+Admin Use Cases:
+- Manage users (add, remove, suspend)
+- Manage moderators
+- Manage all blog posts
+- Configure system settings
+
+External System Use Cases:
+- Authenticate users (Authentication Provider)
+- Send notifications (Notification Service)

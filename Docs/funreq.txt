@@ -1,0 +1,116 @@
+2️⃣ Functional Requirements
+
+(WHAT the system must do)
+
+Below are clear functional requirements, grouped by feature.
+You can copy this directly into docs/requirements.md.
+
+🔹 2.1 User Management
+User Registration & Login
+
+The system shall allow users to register using email and password.
+
+The system shall allow users to log in and log out securely.
+
+The system may support social login (Google, GitHub).
+
+The system shall authenticate users using session or JWT authentication.
+Profile Management
+
+The system shall allow users to view their profile.
+
+The system shall allow users to update their name, bio, and profile picture.
+
+The system shall provide password reset functionality.
+
+🔹 2.2 Blog Post Management
+Create Blog Posts
+
+The system shall allow registered users to create blog posts.
+
+The system shall provide a rich text editor with formatting options.
+
+The system shall allow users to upload images in blog posts.
+
+The system shall allow users to save posts as drafts.
+
+Edit / Delete Blog Posts
+
+The system shall allow users to edit their own posts.
+
+The system shall allow users to delete their own posts.
+
+The system may support soft delete or permanent deletion.
+
+Post Metadata
+
+Each blog post shall have a title, author, content, publish date, tags, and category.
+
+The system shall generate SEO-friendly URL slugs for posts.
+
+🔹 2.3 Content Discovery
+Home Page / Feed
+
+The system shall display a list of published blog posts.
+
+The system shall show a preview (title, snippet, author, date).
+
+The system shall support pagination or infinite scrolling.
+
+Search
+
+The system shall allow users to search posts by title or content.
+
+Categories & Tags
+
+The system shall allow filtering posts by category or tag.
+
+The system may highlight featured or popular posts.
+
+🔹 2.4 Interaction & Engagement
+Comments
+
+The system shall allow users to comment on blog posts.
+
+The system shall allow users to edit or delete their own comments.
+
+The admin shall be able to moderate comments.
+
+Likes / Reactions
+
+The system shall allow users to like blog posts.
+
+Sharing
+
+The system shall allow users to share blog post links.
+
+🔹 2.5 Admin Functionality
+Admin Dashboard
+
+The system shall allow admin to view all users.
+
+The system shall allow admin to ban or promote users.
+
+The system shall allow admin to approve or remove blog posts.
+
+The system shall allow admin to manage categories.
+
+The system shall display basic site statistics.
+
+🔹 2.6 Notifications
+
+The system shall notify users when their post receives a comment or like.
+
+The system may send email or in-app notifications.
+
+The system may support newsletter subscriptions.
+
+🔹 2.7 Security & Performance
+
+The system shall enforce role-based access control.
+
+The system shall validate and sanitize all user inputs.
+
+The system shall protect against XSS, SQL injection, and CSRF.
+
+The system shall optimize page loading using caching.
