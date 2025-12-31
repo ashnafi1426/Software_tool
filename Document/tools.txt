@@ -1,0 +1,536 @@
+﻿PROJECT TITLE
+Blog Website System
+PHASE 1: Formation & Setup (BLOG WEBSITE)
+Step 1: Group Formation
+*  group has 5 members
+
+* Decide:
+
+   * Repo Owner (Ashenafi Sileshi)
+
+   * Others =kalkidan
+            
+
+Deliverable
+ ✔ List of group members (Name + ID)
+Name                                  id
+kalkidan mengistu                           1115/16
+Biruk Aytinew                                   0493/16
+Iserael Abera                                   4167/16
+Abrham G/medhen                          0082/16                        
+________________
+
+
+Step 2: Project Proposal 
+ What is a Blog Website?
+A Blog Website System allows users to:
+      * Read blog posts
+
+      * Register and log in
+
+      * Create, edit, and delete blog posts
+
+      * Comment on posts
+
+      * Admin can manage users and content
+
+________________
+
+
+📄 Sample Project Proposal 
+The Blog Website System is a web-based application that allows users to create, publish, and manage blog posts online. Registered users can write articles, edit or delete their posts, and comment on other users’ blogs. Visitors can read published posts without registration. An administrator manages users, categories, and content moderation. The system aims to provide an easy-to-use platform for sharing knowledge and ideas.
+✔ This satisfies the requirement
+ Step 3: GitHub Repository Setup
+Repo owner creates GitHub repository
+Example name:
+
+blog-website-system
+         1.          2. Add other 4 members as collaborators
+
+ Step 4: README.md (Initial Commit)
+README.md Content
+# Blog Website System
+
+
+This project is a blog website that allows users to create, publish, and manage blog posts.
+
+
+## Group Members
+1. Name Ashenafi sileshi –  0283/16
+2. Name Kalkidan Mengistu – 1115/16
+3. Name Biruk Aytinew – 0483/16
+4. Name Iserael Abera – 4116/16
+5. Name Abrham G/medhen – 0082/16
+
+
+ Repo owner commits this first
+ Step 5: Collaboration Check
+Each remaining member:
+            * Clone repository
+
+            * Add GitHub username beside their name
+
+            * Commit and push
+
+ Phase 1 DONE 
+PHASE 2: Requirements Analysis & UML (BLOG WEBSITE)
+Step 1: Identify Actors
+Actors for Blog Website
+               1. Visitor – reads blog posts
+
+               2. Registered User (Blogger) – writes & manages posts
+
+               3. Admin – manages users & content
+
+Step 2: Functional Requirements (Use Cases)
+Write like this:
+Visitor:
+                  * View blog posts
+
+                  * Search posts
+
+Registered User:
+                     * Register
+
+                     * Login / Logout
+
+                     * Create blog post
+
+                     * Edit blog post
+
+                     * Delete blog post
+
+                     * Comment on posts
+
+Admin:
+                        * Manage users
+
+                        * Approve or remove posts
+
+                        * Manage categories
+
+________________
+
+
+Step 3: Use Case Diagram
+Draw ONE Use Case Diagram showing:
+                           * Actors
+
+                           * All use cases
+
+                           * Relationships
+
+Tool: Enterprise Architect
+  
+
+                            figure 1.1 usecase diagram
+
+Step 4: Activity & Sequence Diagrams
+Choose 3–4 important use cases:
+                              1. User Registration
+
+                              2. Login
+
+                              3. Create Blog Post
+
+                              4. Comment on Post
+
+For EACH:
+                                 * Activity Diagram → steps flow
+
+                                 * Sequence Diagram → interaction between objects
+
+Example:
+Create Blog Post
+                                    * User → BlogController → Database
+                                    *                                     *                                     *   
+figure 2.1 Activity diagram - registeration
+
+
+  
+
+figure 2.2Activity Diagram Create Post
+
+
+  
+
+figure 2.3 Activity Diagram Login
+
+
+  
+
+figure 2.4 activity diagram comment post
+  
+
+figure 2.5 sequence diagram user register
+  
+
+figure 2.6  sequence diagram - login
+  
+
+figure 2.7 sequence diagram - create blog post
+
+
+  
+
+figure 2.8 sequence diagram -  comment on post
+________________
+
+
+Step 5: Save in GitHub
+Create folder:
+docs/
+
+
+Inside:
+                                       * UseCaseDiagram.png
+
+                                       * ActivityDiagram_CreatePost.png
+
+                                       * SequenceDiagram_Login.png
+
+                                       * requirements.md
+
+Phase 2 DONE ✅
+________________
+
+
+PHASE 3: System Design & Code Engineering
+Step 1: Class Diagram (BLOG WEBSITE)
+Main Classes
+                                          * User
+
+                                          * Admin
+
+                                          * BlogPost
+
+                                          * Comment
+
+                                          * Category
+
+                                          * AuthService
+
+Example:
+User
+                                             * userId: int
+
+                                             * username: String
+
+                                             * email: String
+
+                                             * password: String
+
+                                             * login()
+
+                                             * logout()
+
+BlogPost
+                                                * postId: int
+
+                                                * title: String
+
+                                                * content: String
+
+                                                * createPost()
+
+                                                * editPost()
+
+                                                * deletePost()
+
+📌 Show relationships (User → BlogPost)
+  
+
+                            figure 3.2 class diagram
+________________
+
+
+Step 2: Forward Engineering
+                                                   * Generate Java code from Class Diagram
+
+                                                   * Save in:
+
+src/
+
+
+                                                      * Commit message:
+
+Initial code generation from Class Diagram
+
+
+________________
+
+
+Step 3: Reverse Engineering
+                                                         * Modify 2–3 classes:
+
+                                                            * Add constructors
+
+                                                            * Add getters/setters
+
+                                                               * Import back to Enterprise Architect
+
+📄 Report (docs/Phase_2_Report.md)
+Include screenshots:
+                                                                  1. Class Diagram
+
+                                                                  2. Generated code
+
+                                                                  3. Modified code
+
+                                                                  4. Updated diagram
+
+Phase 3 DONE ✅
+________________
+
+
+PHASE 4: Collaborative Implementation
+Step 1: Task Breakdown
+Example:
+                                                                     * Student A → Login & Register
+
+                                                                     * Student B → BlogPost CRUD
+
+                                                                     * Student C → Comment system
+
+                                                                     * Student D → Admin features
+
+                                                                     * Student E → Database logic
+
+________________
+
+
+Step 2: Git Workflow (MANDATORY)
+For every task:
+                                                                        1. Create branch
+
+                                                                        2. Commit often
+
+                                                                        3. Push branch
+
+                                                                        4. Open Pull Request
+
+                                                                        5. Review
+
+                                                                        6. Merge
+
+Never push directly to main
+________________
+
+
+PHASE 5: HLD & LLD
+🔹 HLD (Big Picture)
+                                                                           * Architecture diagram  
+Modules (Auth, Blog, Admin)  
+Data flow  
+
+                                                                              * Database schema  
+
+🔹 LLD (Details)
+1. Class diagram method definitions 
+  
+
+
+
+                                                                                 * Pseudocode
+
+1. User Login
+Algorithm: UserLogin
+Input: username, password
+Output: login success or failure
+BEGIN
+    Read username and password from input
+    IF username exists in database THEN
+        IF password matches database record THEN
+            Create user session
+            Display "Login Successful"
+        ELSE
+            Display "Incorrect Password"
+        ENDIF
+    ELSE
+        Display "User does not exist"
+    ENDIF
+END
+2. Create Blog Post
+Algorithm: CreatePost
+Input: postTitle, postContent, authorId
+Output: success/failure message
+BEGIN
+    IF user is authenticated THEN
+        IF postTitle and postContent are not empty THEN
+            Insert new post into Posts table:
+                - title = postTitle
+                - content = postContent
+                - authorId = authorId
+                - createdAt = current timestamp
+            Display "Post Created Successfully"
+        ELSE
+            Display "Title or Content cannot be empty"
+        ENDIF
+    ELSE
+        Display "User not authenticated"
+    ENDIF
+END
+3. Add Comment
+Algorithm: AddComment
+Input: postId, userId, commentContent
+Output: success/failure message
+BEGIN
+    IF user is authenticated THEN
+        IF commentContent is not empty THEN
+            Insert new comment into Comments table:
+                - postId = postId
+                - userId = userId
+                - content = commentContent
+                - createdAt = current timestamp
+            Display "Comment Added Successfully"
+        ELSE
+            Display "Comment cannot be empty"
+        ENDIF
+    ELSE
+        Display "User not authenticated"
+    ENDIF
+END
+4. Fetch All Posts
+Algorithm: GetAllPosts
+Input: none
+Output: list of posts
+BEGIN
+    Query Posts table
+    FOR each post in result DO
+        Fetch post title, content, author
+        Fetch comments for post
+        Display post and comments
+    END FOR
+END
+5. Admin Moderation of Post or Comment
+Algorithm: ModerateContent
+Input: contentId, actionType (delete/block)
+Output: success/failure message
+BEGIN
+    IF user.role = 'Admin' THEN
+        IF actionType = 'deletePost' THEN
+            Delete post from Posts table where postId = contentId
+            Display "Post Deleted Successfully"
+        ELSE IF actionType = 'deleteComment' THEN
+            Delete comment from Comments table where commentId = contentId
+            Display "Comment Deleted Successfully"
+        ENDIF
+    ELSE
+        Display "Permission Denied"
+    ENDIF
+END
+                                                                                    * SQL tables
+-- DATABASE: Blog Website
+CREATE DATABASE IF NOT EXISTS blog_website;
+USE blog_website;
+-- 1. Users Table
+CREATE TABLE IF NOT EXISTS users (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    profile_image VARCHAR(255) DEFAULT NULL,
+    bio TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+-- 2. Posts Table
+CREATE TABLE IF NOT EXISTS posts (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    user_id INT UNSIGNED NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    featured_image VARCHAR(255) DEFAULT NULL,
+    status ENUM('draft', 'published') DEFAULT 'draft',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+-- 3. Comments Table
+CREATE TABLE IF NOT EXISTS comments (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    post_id INT UNSIGNED NOT NULL,
+    user_id INT UNSIGNED NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+-- 4. Categories Table
+CREATE TABLE IF NOT EXISTS categories (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL UNIQUE,
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+-- 5. Tags Table
+           CREATE TABLE IF NOT EXISTS tags (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+-- 6. Post_Tags Table (Many-to-Many)
+-- =====================================
+CREATE TABLE IF NOT EXISTS post_tags (
+    post_id INT UNSIGNED NOT NULL,
+    tag_id INT UNSIGNED NOT NULL,
+    PRIMARY KEY (post_id, tag_id),
+    FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE,
+    FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE
+);
+-- 7. Likes Table
+CREATE TABLE IF NOT EXISTS likes (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    post_id INT UNSIGNED NOT NULL,
+    user_id INT UNSIGNED NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    UNIQUE KEY unique_like (post_id, user_id));
+Error handling
+DELIMITER $$
+CREATE TRIGGER trg_posts_before_insert
+BEFORE INSERT ON posts
+FOR EACH ROW
+BEGIN
+    IF CHAR_LENGTH(NEW.title) < 5 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Post title too short (min 5 characters)';
+    END IF;
+    IF CHAR_LENGTH(NEW.content) < 10 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Post content too short (min 10 characters)';
+    END IF;
+END$$
+DELIMITER ;
+-- Prevent empty comment
+DELIMITER $$
+CREATE TRIGGER trg_comments_before_insert
+BEFORE INSERT ON comments
+FOR EACH ROW
+BEGIN
+    IF CHAR_LENGTH(NEW.content) = 0 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Comment cannot be empty';
+    END IF;
+END$$
+DELIMITER ;
+                                                                                    * Sequence diagrams  
+
+
+PHASE 6: Unit Testing (JUnit)
+Test examples:
+                                                                                       * testLogin()
+
+                                                                                       * testCreatePost()
+
+                                                                                       * testDeletePost()
+
+Use:
+                                                                                          * Assertions
+
+                                                                                          * Automated tests
+
+                                                                                          * Clear naming
