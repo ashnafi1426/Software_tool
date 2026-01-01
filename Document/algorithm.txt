@@ -1,0 +1,87 @@
+Algorithm: UserLogin
+Input: username, password
+Output: login success or failure
+
+BEGIN
+    Read username and password from input
+    IF username exists in database THEN
+        IF password matches database record THEN
+            Create user session
+            Display "Login Successful"
+        ELSE
+            Display "Incorrect Password"
+        ENDIF
+    ELSE
+        Display "User does not exist"
+    ENDIF
+END
+Algorithm: CreatePost
+Input: postTitle, postContent, authorId
+Output: success/failure message
+
+BEGIN
+    IF user is authenticated THEN
+        IF postTitle and postContent are not empty THEN
+            Insert new post into Posts table:
+                - title = postTitle
+                - content = postContent
+                - authorId = authorId
+                - createdAt = current timestamp
+            Display "Post Created Successfully"
+        ELSE
+            Display "Title or Content cannot be empty"
+        ENDIF
+    ELSE
+        Display "User not authenticated"
+    ENDIF
+END
+
+Algorithm: AddComment
+Input: postId, userId, commentContent
+Output: success/failure message
+
+BEGIN
+    IF user is authenticated THEN
+        IF commentContent is not empty THEN
+            Insert new comment into Comments table:
+                - postId = postId
+                - userId = userId
+                - content = commentContent
+                - createdAt = current timestamp
+            Display "Comment Added Successfully"
+        ELSE
+            Display "Comment cannot be empty"
+        ENDIF
+    ELSE
+        Display "User not authenticated"
+    ENDIF
+END
+Algorithm: GetAllPosts
+Input: none
+Output: list of posts
+
+BEGIN
+    Query Posts table
+    FOR each post in result DO
+        Fetch post title, content, author
+        Fetch comments for post
+        Display post and comments
+    END FOR
+END
+Algorithm: ModerateContent
+Input: contentId, actionType (delete/block)
+Output: success/failure message
+
+BEGIN
+    IF user.role = 'Admin' THEN
+        IF actionType = 'deletePost' THEN
+            Delete post from Posts table where postId = contentId
+            Display "Post Deleted Successfully"
+        ELSE IF actionType = 'deleteComment' THEN
+            Delete comment from Comments table where commentId = contentId
+            Display "Comment Deleted Successfully"
+        ENDIF
+    ELSE
+        Display "Permission Denied"
+    ENDIF
+END

@@ -191,7 +191,7 @@ Inside:
 
                                        * requirements.md
 
-Phase 2 DONE ✅
+Phase 2 DONE 
 ________________
 
 
@@ -279,7 +279,7 @@ Include screenshots:
 
                                                                   4. Updated diagram
 
-Phase 3 DONE ✅
+Phase 3 DONE 
 ________________
 
 

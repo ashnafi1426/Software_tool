@@ -1,0 +1,29 @@
+1. Users Table
+| Field      | Data Type            | Key    | Description                   |
+| ---------- | -------------------- | ------ | ----------------------------- |
+| user_id    | INT                  | PK     | Unique user ID                |
+| username   | VARCHAR(50)          | UNIQUE | Username for login            |
+| email      | VARCHAR(100)         | UNIQUE | User email                    |
+| password   | VARCHAR(255)         |        | Hashed password               |
+| role       | ENUM('Admin','User') |        | User role                     |
+| created_at | DATETIME             |        | Account creation timestamp    |
+| updated_at | DATETIME             |        | Last profile update timestamp |
+2. Posts Table
+| Field       | Data Type    | Key                          | Description                |
+| ----------- | ------------ | ---------------------------- | -------------------------- |
+| post_id     | INT          | PK                           | Unique post ID             |
+| title       | VARCHAR(255) |                              | Post title                 |
+| content     | TEXT         |                              | Post content               |
+| author_id   | INT          | FK → Users(user_id)          | Author of the post         |
+| category_id | INT          | FK → Categories(category_id) | Category of the post       |
+| created_at  | DATETIME     |                              | Post creation timestamp    |
+| updated_at  | DATETIME     |                              | Post last update timestamp |
+3. Comments Table
+| Field      | Data Type | Key                 | Description                   |
+| ---------- | --------- | ------------------- | ----------------------------- |
+| comment_id | INT       | PK                  | Unique comment ID             |
+| post_id    | INT       | FK → Posts(post_id) | Related post                  |
+| user_id    | INT       | FK → Users(user_id) | Comment author                |
+| content    | TEXT      |                     | Comment text                  |
+| created_at | DATETIME  |                     | Comment creation timestamp    |
+| updated_at | DATETIME  |                     | Comment last update timestamp |
